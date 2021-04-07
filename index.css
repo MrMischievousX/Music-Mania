@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Lcircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  width: 40vw;
+  height: 40vw;
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  border-radius: 50%;
+}
+.Scircle {
+  display: flex;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+}
+section {
+  margin: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bubbles {
+  position: absolute;
+  border-radius: 50%;
+  background: black;
+  height: 4vw;
+  width: 4vw;
+  border: 0.5px solid white;
+}
+
+/*Bubbles */
+.smcircle1 {
+  background: #c13584;
+  top: 38vw;
+  right: 48vw;
+}
+.smcircle2 {
+  background: #833ab4;
+  top: 3vw;
+  left: 48vw;
+}
+.smcircle3 {
+  background: #c13584;
+  top: 20vw;
+  left: 30.5vw;
+}
+.smcircle4 {
+  background: #833ab4;
+  top: 20vw;
+  right: 30.5vw;
+}
+.smcircle5 {
+  background: tomato;
+  top: 8.5vw;
+  left: 35.3vw;
+}
+.smcircle6 {
+  background: #5851db;
+  top: 8.5vw;
+  right: 35.3vw;
+}
+.smcircle7 {
+  background: #fd1d1d;
+  top: 32.5vw;
+  left: 35.3vw;
+}
+.smcircle8 {
+  background: tomato;
+  top: 32.5vw;
+  right: 35.3vw;
+}
+h3 {
+  position: absolute;
+  font-size: 4.5vw;
+  color: navy;
+}
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+  background-color: red;
+}
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /* Js */
+
+  .visual > div {
+    position: absolute;
+    bottom: 0%;
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+    background-color: red;
+  }
+  @keyframes jump {
+    0% {
+      bottom: 0%;
+      left: 20%;
+    }
+    50% {
+      bottom: 50%;
+      left: 50%;
+    }
+
+    100% {
+      bottom: 00%;
+      left: 80%;
+    }
+  }
+
+  section {
+    margin: 10vw 0 0 0;
+  }
+  .smcircle1 {
+    top: 45vw;
+  }
+  .smcircle2 {
+    top: 10.5vw;
+  }
+  .smcircle3 {
+    top: 27vw;
+  }
+  .smcircle4 {
+    top: 27vw;
+  }
+  .smcircle5 {
+    top: 16vw;
+  }
+  .smcircle6 {
+    top: 16vw;
+  }
+  .smcircle7 {
+    top: 39.5vw;
+  }
+  .smcircle8 {
+    top: 39.5vw;
+  }
+}
